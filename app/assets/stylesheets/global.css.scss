@@ -17,13 +17,17 @@ body {
   min-width: 460px;
   max-width: 1024px;
   margin: 0 auto;
-  padding: 5px;
+  padding: 20px;
 }
 
 .alert {
-
+  background-color: #BF550A;
+  border: 3px solid #303030;
+  padding: 3px;
 }
 
 .notice {
-
+  background-color: #25A860;
+  border: 3px solid #303030;
+  padding: 3px;
 }
