@@ -1,15 +1,19 @@
 * {
   font-family: helvetica;
-  color: #515151;
+  color: #303030;
 }
 
 a {
-  color: #00B4FF;
+  color: #BF550A;
   text-decoration: none;
 }
 
+body {
+  background-color: #F7F3ED;
+}
+
 #container {
-  background-color: #EEEEEE;
+  background-color: #D9CBB8;
   min-width: 460px;
   max-width: 1024px;
   margin: 0 auto;
@@ -17,7 +21,7 @@ a {
 }
 
 .alert {
-  
+
 }
 
 .notice {
