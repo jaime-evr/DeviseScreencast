@@ -5,6 +5,10 @@ class TasksController < ApplicationController
     @tasks = current_user.tasks
   end
 
+  def new
+    @task = Task.new
+  end
+
   def show
     @task = Task.where(id: params[:id]).first
   end
