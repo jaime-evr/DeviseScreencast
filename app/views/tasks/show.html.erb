@@ -1,3 +1,6 @@
 <h1><%= @task.name%></h1>
 
 <p><%= @task.comments %></p>
+
+<%= link_to "My tasks", tasks_path, class: 'pure-button pure-button-primary' %>
+<%= link_to "Delete", task_path(@task), method: :delete, class: 'pure-button pure-button-error' %>

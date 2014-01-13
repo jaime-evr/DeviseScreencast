@@ -1,8 +1,10 @@
 <h1>Welcome to this awesome Web Site</h1>
 
 <% if user_signed_in? %>
-  <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+  <%= link_to "See all tasks", tasks_path, class: 'pure-button pure-button-primary' %>
+  <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'pure-button pure-button-secondary' %></p>
 <% else %>
-    <p><%= link_to "Sign in", new_user_session_path %> or <%= link_to 'Sign up', new_user_registration_path %> to get started</p>
+    <p><%= link_to "Sign in", new_user_session_path, class: 'pure-button pure-button-primary'%> or 
+    <%= link_to 'Sign up', new_user_registration_path, class: 'pure-button pure-button-primary' %> to get started</p>
 <% end %>
 

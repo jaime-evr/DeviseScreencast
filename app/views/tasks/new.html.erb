@@ -1,2 +1,8 @@
-<%= form_for @task do |f| %>
+<h2>New Task</h2>
+<%= form_for @task, html: { class: 'pure-form pure-form-stacked' } do |f| %>
+  <%= f.text_field :name, class: 'pure-input-1-4', placeholder: 'Name'  %>
+  <%= f.text_area :comments, class: 'pure-input-1-4', placeholder: 'Comments' %>
+  
+  <%= f.button "Create", class: 'pure-button pure-button-primary' %>
+  <%= link_to "Go Back", tasks_path, class: 'pure-button pure-button-secondary' %>
 <% end %>
