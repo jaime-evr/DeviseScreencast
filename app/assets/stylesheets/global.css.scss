@@ -1,19 +1,17 @@
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 * {
   font-family: helvetica;
-  color: #303030;
-}
-
-a {
-  color: #BF550A;
-  text-decoration: none;
-}
-
-body {
-  background-color: #F7F3ED;
+  color: #1B325F;
 }
 
 #container {
-  background-color: #D9CBB8;
+  background-color: #E9F2F9;
+  @include border-radius(5px);  
   min-width: 460px;
   max-width: 1024px;
   margin: 0 auto;
@@ -21,13 +19,38 @@ body {
 }
 
 .alert {
-  background-color: #BF550A;
-  border: 3px solid #303030;
-  padding: 3px;
+  background-color: #F26C4F;
+  @include border-radius(5px);
+  padding: 10px;
 }
 
 .notice {
-  background-color: #25A860;
-  border: 3px solid #303030;
-  padding: 3px;
+  background-color: #3A89C9;
+  @include border-radius(5px);
+  padding: 10px;
+}
+
+.pure-button-success,
+.pure-button-error,
+.pure-button-warning,
+.pure-button-secondary {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.pure-button-success {
+    background: rgb(28, 184, 65); /* this is a green */
+}
+
+.pure-button-error {
+    background: rgb(202, 60, 60); /* this is a maroon */
+}
+
+.pure-button-warning {
+    background: rgb(223, 117, 20); /* this is an orange */
+}
+
+.pure-button-secondary {
+    background: rgb(66, 184, 221); /* this is a light blue */
 }
