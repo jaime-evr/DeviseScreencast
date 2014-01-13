@@ -4,8 +4,6 @@ class TasksController < ApplicationController
 
   def index
     @tasks = current_user.tasks
-    puts "*"*100
-    puts @tasks
   end
 
   def new
