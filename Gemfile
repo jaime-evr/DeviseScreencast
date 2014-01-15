@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'pry'
+
 gem 'devise'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -34,6 +36,10 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
