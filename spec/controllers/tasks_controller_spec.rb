@@ -57,7 +57,7 @@ describe TasksController do
 
     it "redirects to the created task" do
       post :create, task: FactoryGirl.attributes_for(:task)
-      expect(response).to redirect_to @task
+      expect(response).to redirect_to assigns(:task)
     end
   end
 end
