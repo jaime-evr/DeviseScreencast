@@ -11,8 +11,7 @@ class TasksController < ApplicationController
   end
 
   def create
-    @task = Task.new permited_params
-    @task.user_id = current_user.id
+    @task = current_user.tasks.new permited_params
     if @task.save
       flash[:notice] = "Task created successfully"
       redirect_to @task
